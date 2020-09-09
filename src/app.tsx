@@ -3,11 +3,11 @@ import '../style/app.less'
 
 interface propt {
     name: string,
-    age: number
 }
 
-function App(iprop: propt) {
-    return <div>{`Hello ${iprop.name},age: ${iprop.age}`}</div>
+const App:React.FC<propt>= ({name}) => {
+    return <h1>{`Hello, ${name}`}</h1>
 }
+
 
 export default App;
