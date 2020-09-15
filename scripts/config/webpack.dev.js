@@ -5,6 +5,7 @@ const webpack = require('webpack');
 
 module.exports = merge(common, {
     mode: "development",
+    devtool:"eval-cheap-module-source-map",
     devServer: {
         port: '3050',
         stats: 'errors-only', // 终端仅打印 error
