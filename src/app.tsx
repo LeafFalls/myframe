@@ -1,13 +1,10 @@
 import React from 'react';
-import '../style/app.less'
+import '../style/app.less';
 
 interface propt {
-    name: string,
+  name: string;
 }
 
-const App:React.FC<propt>= ({name}) => {
-    return <h1>{`Hello, ${name}`}</h1>
-}
-
+const App: React.FC<propt> = (properties: propt) => <h1>{`Hello, ${properties.name}`}</h1>;
 
 export default App;
