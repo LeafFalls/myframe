@@ -28,7 +28,7 @@ module.exports = {
   plugins: ['react', '@typescript-eslint'],
   // "off" 或 0，表示关闭规则；"warn" 或 1，开启规则，使用警告级别；"error" 或 2，开启规则，使用错误级别
   rules: {
-    'react/jsx-filename-extension': [0],
+    'react/jsx-filename-extension': [2, { extensions: ['.tsx', '.ts'] }],
     'import/extensions': [
       2,
       'ignorePackages',

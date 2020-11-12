@@ -7,3 +7,21 @@
     font-size: 15px;
   }
 }
+
+// 测试postcss会不会自动加前缀
+#ss {
+  width: 100px;
+  height: 100px;
+  background: red;
+  animation: myfirst 5s;
+}
+
+@keyframes myfirst {
+  from {
+    background: red;
+  }
+
+  to {
+    background: yellow;
+  }
+}
