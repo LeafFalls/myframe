@@ -41,6 +41,8 @@ module.exports = {
     ],
     '@typescript-eslint/no-var-requires': [0],
     'import/no-extraneous-dependencies': [0],
+    'no-console': [1],
+    'unicorn/consistent-function-scoping': [0], // 关闭函数内不能写函数的检查，适应函数式编程，hook
   },
   settings: {
     'import/resolver': {
